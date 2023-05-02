@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Albelli.OrderManagement.Business.Contracts\Albelli.OrderManagement.Business.Contracts.csproj" />
+    <ProjectReference Include="..\Albelli.OrderManagement.Business\Albelli.OrderManagement.Business.csproj" />
+    <ProjectReference Include="..\Albelli.OrderManagement.DAL.Contracts\Albelli.OrderManagement.DAL.Contracts.csproj" />
+    <ProjectReference Include="..\Albelli.OrderManagement.DAL\Albelli.OrderManagement.DAL.csproj" />
+    <ProjectReference Include="..\Albelli.OrderManagement.Models\Albelli.OrderManagement.Models.csproj" />
+    <ProjectReference Include="..\Albelli.OrderManagement.WebAPICommon\Albelli.OrderManagement.WebAPICommon.csproj" />
+  </ItemGroup>
+    
+<PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <NoWarn>$(NoWarn);1591</NoWarn>
+  <StartupObject>Albelli.OrderManagement.Api.Program</StartupObject>
+</PropertyGroup>
+
+</Project>
